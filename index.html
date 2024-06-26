@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>  
+  <style>
+    .expense-list {
+      margin-top: 20px;
+    }
+  </style>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+
+<body >
+   
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="expenseAmount">Choose expense amount</label>
+        <input type="number" name="expenseAmount" id="expenseAmount" required />
+    
+        <label for="description">Choose description</label>
+        <input type="text" name="description" id="description" required />
+    
+        <label for="category">Choose category</label>
+        <select name="category" id="category" required>
+          <option value="fuel">FUEL</option>
+          <option value="food">FOOD</option>
+          <option value="electricity">ELECTRICITY</option>
+          <option value="movie">MOVIE</option>
+        </select>
+    
+        <button type="submit">Add Expense</button>
+      </form>
+      <ul></ul>
+
+</body>
+<script src="hk.js"></script>
+
+</html>
